@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript">// <![CDATA[
+        function loading() {
+            $("#loading").show();
+            $("#content").hide();
+        }
+// ]]></script>
+    <title>Meet2Minutes
+    </title>
+
+</head>
+
+
+<body>
+
+
+
+    <section>
+        <h1 id="heading">Meet 2 Minutes</h1>
+
+        <!--     <br>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="image1.jpeg" height='250px' style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="image2.jpeg" height='250px' style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="image3.jpeg" height='250px' style="width:100%">
+        </div>
+    </div> -->
+        <br>
+        <main>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <td>
+                            <div>
+                                <form method="post" action="/model">
+                                    <h3>Enter your <span style="color: #E90428;">text</span> that is to be <span
+                                            style="color: #BB0E7E;">summarized</span></h3>
+                                    <br>
+                                    <textarea placeholder="Paste here the passage that is to be summarised!" name="text"
+                                        style="width:600px; height:200px;"></textarea>
+                                    <br>
+                                    <!-- <h6>Choose your Output Language: <input type="text" name=lang></h6> -->
+                                    <label for="lang">Choose your Output Language:</label>
+                                    <select id="lang" name="lang">
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                        <option value="it">Italian</option>
+                                        <option value="pt">Portuguese</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="ja">Japanese</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="ar">Arabic</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="bn">Bengali</option>
+                                        <option value="ms">Malay</option>
+                                        <option value="ta">Tamil</option>
+                                        <option value="te">Telugu</option>
+                                        <option value="th">Thai</option>
+                                        <option value="ur">Urdu</option>
+                                        <option value="fa">Farsi</option>
+                                        <option value="tr">Turkish</option>
+                                        <option value="ko">Korean</option>
+                                    </select>
+
+                                    <input id="sum" class=" btn btn-warning btn-md active" role="button"
+                                        aria-pressed="true"
+                                        style="display: block;margin-top: 5px; color:#fefae0; background-color: #BB0E7E;border-color: #BB0E7E;"
+                                        type="submit" value="Summarize" onclick="loading()"><img id="loading">
+
+                                </form>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div>
+                                <div class=" mySlides card" style="width: 28rem; margin-left: 2.5rem; height: 20rem;">
+                                    <img class="card-img-top"
+                                        src="https://miro.medium.com/max/1064/1*GIVviyN9Q0cqObcy-q-juQ.png"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">The audio/text goes through a refinement process, and after
+                                            applying various NLP techniques it is transformed into a summary</p>
+                                    </div>
+                                </div>
+
+                                <div class=" mySlides card" style="width: 28rem; margin-left: 2.5rem; height: 20rem;">
+                                    <img class="card-img-top"
+                                        src="https://mytopschools.com/wp-content/uploads/2022/06/text1.png"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Summaries are translated in any language as desired to
+                                            provide
+                                            ease to the user.</p>
+                                    </div>
+                                </div>
+
+                                <div class=" mySlides card" style="width: 28rem; margin-left: 2.5rem; height: 20rem;">
+                                    <img class="card-img-top" src="https://i.morioh.com/201012/7fac8bea.webp"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Background noise is removed from audios, to get a seamless
+                                            result.</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="mySlides">
+                                <img src="https://miro.medium.com/max/1064/1*GIVviyN9Q0cqObcy-q-juQ.png" width="500px"
+                                    alt="pic">
+                                <div class="card">
+                                    <p class="text">Python</p>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <img src="https://mytopschools.com/wp-content/uploads/2022/06/text1.png" width="500px"
+                                    alt="pic">
+                                <div class="card">
+                                    <p class="text">Python</p>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <img src="https://i.morioh.com/201012/7fac8bea.webp" width="500px" alt="pic">
+                                <div class="card">
+                                    <p class="text">Python</p>
+                                </div>
+                            </div> -->
+                            </div>
+                        </td>
+
+                    </tr>
+
+
+                </thead>
+
+                <tbody>
+                    <form method="post" action="/audio">
+                        <tr>
+                            <th>
+                                <h6 style="margin-top: 20px;"><span style="color:#ef233c;"><u>OR</u></span></h6>
+                                <div>
+
+                                    <h5>Upload Your audio/video file </h5> <input type="file" message=Choose name=file>
+                                    <br><br>
+                                    <label for="lang1">Choose your Output Language:</label>
+                                    <select id="lang1" name="lang1">
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                        <option value="it">Italian</option>
+                                        <option value="pt">Portuguese</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="ja">Japanese</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="ar">Arabic</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="bn">Bengali</option>
+                                        <option value="ms">Malay</option>
+                                        <option value="ta">Tamil</option>
+                                        <option value="te">Telugu</option>
+                                        <option value="th">Thai</option>
+                                        <option value="ur">Urdu</option>
+                                        <option value="fa">Farsi</option>
+                                        <option value="tr">Turkish</option>
+                                        <option value="ko">Korean</option>
+                                    </select>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+
+                            <td><input id="sum2" class="btn btn-primary btn-md primary" role="button"
+                                    aria-pressed="true" style="margin-top: 5px;margin-bottom: 12px;" type="submit"
+                                    value="Summarize your File" onclick=loading><img id="loading2">
+
+                            </td>
+                        </tr>
+
+
+
+                    </form>
+                </tbody>
+
+
+
+            </table>
+
+
+        </main>
+    </section>
+
+
+
+
+    <!-- <div id="loading"></div>
+<div id="content">     -->
+    <!--  <form method="post" action="/model">
+            <h3>Enter your text that is to be summarized</h3><br><textarea name="text"
+                style="width:600px; height:200px;"></textarea><br>
+            <h3>Choose your Output Language: <input type="text" name=lang></h3>
+            <input type="submit" value="summarize" onclick="loading()">
+        </form>
+ -->
+    <!--  <div>
+            <form method="post" action="/audio">
+                <h3>OR<br><br> Upload Your audio/video file</h3><br><input type="file" message=Choose name=file><br><br>
+                <h3>Choose your Output Language: <input type="text" name=lang1></h3>
+                <input type="submit" value="Summarize your File" onclick=loading>
+            </form>
+        </div> -->
+
+
+    <footer class="sticky-footer rounded-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <q>Technology made large populations possible; large populations now
+                        make technology indispensable.</q> - <span style="color:#8d99ae; font-size: smaller;"><b>Joseph
+                            Krutch</b></span>
+                </div>
+                <div class="col-md-12 text-left bottom-left">Designed by HASSAN SOHAIL&#169;</div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <ul style="list-style: none;">
+                        <br>
+                        <h6>Developed by</h6>
+                        <li>
+                            <h6>Jamal Ahmed Khan&#169;</h6>
+                        </li>
+                        <li>
+                            <h6>Masood Ur Rehman</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul style="list-style: none;">
+                        <br>
+                        <h6>Documentation members</h6>
+                        <li>
+                            <h6>Waqar Gul</h6>
+                        </li>
+                        <li>
+                            <h6>Rao Faiq</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4" style="font-family: 'Times New Roman', Times, serif;">NED University of
+                    Engineering and Technology</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+
+        const submit = document.querySelector('#sum').addEventListener("click", function () {
+            const bg = document.querySelector('#sum');
+            const lod = document.querySelector('#loading');
+            lod.style.width = '50px';
+            lod.style.height = '30px';
+            lod.src = 'https://media3.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif?cid=ecf05e4717hw7w67ryutyba0ga5void1rywzfrebt9x90kfg&rid=giphy.gif&ct=g'
+            bg.value = "LOADING ..";
+
+
+        });
+
+        const submit2 = document.querySelector('#sum2').addEventListener("click", function () {
+            const bg = document.querySelector('#sum2');
+            const lod = document.querySelector('#loading2');
+            lod.style.width = '50px';
+            lod.style.height = '35px';
+            lod.src = 'https://media3.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif?cid=ecf05e4717hw7w67ryutyba0ga5void1rywzfrebt9x90kfg&rid=giphy.gif&ct=g'
+            bg.value = "LOADING ..";
+
+
+        });
+
+
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+
+
+
+</body>
+
+<style>
+    q {
+        transition: 0.5s;
+    }
+
+    q:hover {
+        color: yellow;
+    }
+
+    html {
+        font-family: 'Raleway', sans-serif;
+
+    }
+
+    body {
+        background-color: #ffffff;
+        /* background-image: url("https://i.pinimg.com/originals/2e/00/05/2e0005b76c7fb072b477a2e4b2678be5.gif");
+        opacity: 0.9; */
+        color: aliceblue;
+    }
+
+    .card {
+
+        opacity: 0.7;
+        background-color: #333333;
+
+
+    }
+
+    .card-text {
+        color: whitesmoke;
+        font-family: 900;
+    }
+
+    textarea {
+        opacity: 0.7;
+        color: #ffffff;
+        background-color: #333333;
+    }
+
+    textarea::placeholder {
+        color: whitesmoke;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: black;
+    }
+
+    #heading {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        transition: 1s;
+        color: lightcoral;
+
+    }
+
+    #heading:hover {
+        color: yellow;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+    section {
+        background-image: url("https://i.pinimg.com/originals/2e/00/05/2e0005b76c7fb072b477a2e4b2678be5.gif");
+        opacity: 1;
+    }
+
+
+    footer {
+
+        width: 100%;
+        background-color: #333333;
+        /* or any other background color */
+        color: #ffffff;
+        /* or any other text color */
+        padding: 20px 0;
+        /* adjust as needed */
+        background-image: url('https://i.gifer.com/origin/0e/0e01e56732d4fae6e63f9fc4beeaded9.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*position: relative;*/
+        opacity: 0.9;
+        position: relative;
+        /* Added to make the footer sticky */
+        bottom: 0;
+        /* Added to make the footer stick to the bottom */
+        border-top: 2px solid yellow;
+
+    }
+
+
+    .rounded-top {
+        border-top-left-radius: 25px;
+        /* you can adjust the radius as needed */
+        border-top-right-radius: 25px;
+    }
+
+    .text-center {
+        font-size: 1.7em;
+        font-family: 'Comic Neue', cursive;
+    }
+
+    .bottom-left {
+
+        bottom: 10px;
+        left: 20px;
+        font-family: 'Comic Neue', cursive;
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+
+    h5 {
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+
+
+    /* Media Queries */
+
+    @media (max-width: 992px) {
+        footer {
+            height: 120px;
+            width: 100%;
+            bottom: 0;
+            /* increase height for smaller screens */
+        }
+
+        .sticky-footer {
+            font-size: 14px;
+            /* adjust font size for smaller screens */
+        }
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            height: 100px;
+            width: 100%;
+            bottom: 0;
+            /* decrease height for even smaller screens */
+        }
+
+        .sticky-footer {
+            font-size: 12px;
+            /* adjust font size for even smaller screens */
+        }
+    }
+</style>
+
+
+
+
+
+</html>

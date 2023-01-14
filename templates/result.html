@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+
+
+    <title>Summarized Results</title>
+
+</head>
+
+<body>
+    <section class="wrapper">
+        <main>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center mb-5">
+
+                        <h1 class="display-4" id="heading">The Summaries produced</h1>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id="main" class="row">
+                        <div class=" col card">
+                            <h4 style="color:#fb8500">Google T5 model</h4>
+                            <p style="color:#ffb703">{{summary}}</p>
+                        </div>
+                        <div class=" col card">
+                            <h4 style="color:#fb8500">Bert Model</h4>
+                            <p> {{ext_summary}}</p>
+                        </div>
+                        <br>
+                        <div style="margin-top: 40px;" class="card">
+                            <h2 style="color:#ffb703">Final Summary(combination of 2 models): </h2>
+                            <h3>{{summary_2}}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  <h1>The summaries made are: </h1>
+                <h2>Google T5 model</h2><br>
+                <h3>{{summary}}</h3><br><br>
+                <h2> Bert Model: </h2> <br>
+                <h3>{{ext_summary}}</h3>
+                <br><br>
+                <h2>Final Summary(combination of 2 models): </h2><br>
+                <h3>{{summary_2}}</h3> -->
+
+
+
+
+            </div>
+
+            </div>
+    </section>
+
+
+
+
+    </main>
+    <footer class="sticky-footer rounded-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <q>Technology made large populations possible; large populations now
+                        make technology indispensable.</q> - <span style="color:#8d99ae; font-size: smaller;"><b>Joseph
+                            Krutch</b></span>
+                </div>
+                <div class="col-md-12 text-left bottom-left">Designed by HASSAN SOHAIL&#169;</div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <ul style="list-style: none;">
+                        <br>
+                        <h6>Developed by</h6>
+                        <li>
+                            <h6>Jamal Ahmed Khan&#169;</h6>
+                        </li>
+                        <li>
+                            <h6>Masood Ur Rehman</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul style="list-style: none;">
+                        <br>
+                        <h6>Documentation members</h6>
+                        <li>
+                            <h6>Waqar Gul</h6>
+                        </li>
+                        <li>
+                            <h6>Rao Faiq</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4" style="font-family: 'Times New Roman', Times, serif;">NED University of
+                    Engineering and Technology</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+<style>
+    html {
+        font-family: 'Raleway', sans-serif;
+
+    }
+
+    #heading {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        transition: 1s;
+        color: #ffd60a;
+
+    }
+
+    #heading:hover {
+        color: orangered;
+    }
+
+
+    body {
+        background-image: url("https://i.pinimg.com/originals/2e/00/05/2e0005b76c7fb072b477a2e4b2678be5.gif");
+
+        opacity: 1;
+
+    }
+
+    .card {
+
+        color: #ffffff;
+        position: relative;
+        min-width: 450px;
+        min-height: 200px;
+        max-height: 500px;
+        height: auto;
+        overflow: hidden;
+        margin: 2rem;
+        padding: 2rem;
+
+        color: #f8f8f9;
+        background: #090506;
+        background: linear-gradient(to bottom, #090506, #070709);
+        text-align: center;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+    }
+
+
+    .section {
+        min-height: calc(100vh - 40px);
+    }
+
+
+
+    footer {
+        margin-top: 20px;
+        bottom: 0;
+        width: 100%;
+
+        background-color: #333333;
+        /* or any other background color */
+        color: #ffffff;
+        /* or any other text color */
+        padding: 20px 0;
+        /* adjust as needed */
+        background-image: url('https://i.gifer.com/origin/0e/0e01e56732d4fae6e63f9fc4beeaded9.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*position: relative;*/
+        opacity: 0.8;
+        position: sticky;
+        /* Added to make the footer sticky */
+
+        /* Added to make the footer stick to the bottom */
+        border-top: 2px solid yellow;
+    }
+
+
+
+    .rounded-top {
+        border-top-left-radius: 25px;
+        /* you can adjust the radius as needed */
+        border-top-right-radius: 25px;
+    }
+
+    .text-center {
+        font-size: 1.7em;
+        font-family: 'Comic Neue', cursive;
+    }
+
+    .bottom-left {
+
+        bottom: 10px;
+        left: 20px;
+        font-family: 'Comic Neue', cursive;
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+
+
+
+
+    /* Media Queries */
+
+    @media (max-width: 992px) {
+        footer {
+            height: 120px;
+            width: 100%;
+            bottom: 0;
+            /* increase height for smaller screens */
+        }
+
+        .sticky-footer {
+            font-size: 14px;
+            /* adjust font size for smaller screens */
+        }
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            height: 100px;
+            width: 100%;
+            bottom: 0;
+            /* decrease height for even smaller screens */
+        }
+
+        .sticky-footer {
+            font-size: 12px;
+            /* adjust font size for even smaller screens */
+        }
+    }
+</style>
+
+
+
+</html>
