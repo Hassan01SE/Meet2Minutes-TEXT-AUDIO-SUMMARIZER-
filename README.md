@@ -1,4 +1,4 @@
-# Minutes2Meet-TEXT-AUDIO-SUMMARIZER-
+# Minute2Meet-TEXT-AUDIO-SUMMARIZER
 
 <h1>How to run it!</h1>
 <p>
