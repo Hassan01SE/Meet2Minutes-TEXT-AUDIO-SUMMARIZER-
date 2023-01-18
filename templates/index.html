@@ -68,7 +68,7 @@
             <table>
 
                 <thead>
-                    <tr>
+                    <tr id="phone">
                         <td>
                             <div>
                                 <form method="post" action="/model">
@@ -76,7 +76,7 @@
                                             style="color: #BB0E7E;">summarized</span></h3>
                                     <br>
                                     <textarea placeholder="Paste here the passage that is to be summarised!" name="text"
-                                        style="width:600px; height:200px;"></textarea>
+                                        ></textarea>
                                     <br>
                                     <!-- <h6>Choose your Output Language: <input type="text" name=lang></h6> -->
                                     <label for="lang">Choose your Output Language:</label>
@@ -113,7 +113,7 @@
                         </td>
 
                         <td>
-                            <div>
+                            <div id="imgslide">
                                 <div class=" mySlides card" style="width: 28rem; margin-left: 2.5rem; height: 20rem;">
                                     <img class="card-img-top"
                                         src="https://miro.medium.com/max/1064/1*GIVviyN9Q0cqObcy-q-juQ.png"
@@ -382,6 +382,8 @@
         opacity: 0.7;
         color: #ffffff;
         background-color: #333333;
+        width: 600px;
+        height: 200px
     }
 
     textarea::placeholder {
@@ -487,12 +489,12 @@
             height: 120px;
             width: 100%;
             bottom: 0;
-            /* increase height for smaller screens */
+           
         }
 
         .sticky-footer {
             font-size: 14px;
-            /* adjust font size for smaller screens */
+           
         }
     }
 
@@ -501,12 +503,64 @@
             height: 100px;
             width: 100%;
             bottom: 0;
-            /* decrease height for even smaller screens */
+            
         }
 
         .sticky-footer {
             font-size: 12px;
-            /* adjust font size for even smaller screens */
+            
+        }
+    }
+    
+    @media (max-width: 730px) {
+
+
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+            flex-shrink: 1;
+
+        }
+
+
+
+
+        #phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        h3 {
+            margin-left: 40px;
+            font-size: medium;
+        }
+
+        #sum {
+            margin-left: 120px;
+        }
+
+        #sum2 {
+            margin-left: 120px;
+        }
+
+        h5 {
+            font-size: smaller;
+            margin-left: 70px;
+        }
+
+        textarea {
+            width: 360px;
+            height: 160px;
+            margin-left: 15px;
+        }
+
+        #imgslide {
+            display: none;
         }
     }
 </style>
