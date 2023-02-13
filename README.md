@@ -1,6 +1,6 @@
 # Minute2Meet-TEXT-AUDIO-SUMMARIZER
 
-<a href="https://i.ibb.co/mhpbgqp/log3.jpg" alt="blob" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+<a href="https://ibb.co/tYRQFsR"><img src="https://i.ibb.co/mhpbgqp/log3.jpg" alt="log3" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 <h1>How to run it!</h1>
 <p>
