@@ -41,10 +41,7 @@
 
 <body>
 
- <script>
-        alert("The Back End Functionality of the website hasn't been deployed yet, so the buttons are temporarily disabled! ");
-     
-    </script>
+
 
 
     <section>
@@ -75,8 +72,8 @@
                                     <h3>Enter your <span style="color: #E90428;">text</span> that is to be <span
                                             style="color: #BB0E7E;">summarized</span></h3>
                                     <br>
-                                    <textarea placeholder="Paste here the passage that is to be summarised!" name="text"
-                                        ></textarea>
+                                    <textarea placeholder="Paste here the passage that is to be summarised!"
+                                        name="text"></textarea>
                                     <br>
                                     <!-- <h6>Choose your Output Language: <input type="text" name=lang></h6> -->
                                     <label for="lang">Choose your Output Language:</label>
@@ -103,7 +100,7 @@
                                         <option value="ko">Korean</option>
                                     </select>
 
-                                    <input disabled="true" id="sum" class=" btn btn-warning btn-md active" role="button"
+                                    <input id="sum" class=" btn btn-warning btn-md active" role="button"
                                         aria-pressed="true"
                                         style="display: block;margin-top: 5px; color:#fefae0; background-color: #BB0E7E;border-color: #BB0E7E;"
                                         type="submit" value="Summarize" onclick="loading()"><img id="loading">
@@ -114,7 +111,7 @@
 
                         <td>
                             <div id="imgslide">
-                                <div class=" mySlides card" style="width: 28rem; margin-left: 2.5rem; height: 20rem;">
+                                <div id="imgshow" class=" mySlides card">
                                     <img class="card-img-top"
                                         src="https://miro.medium.com/max/1064/1*GIVviyN9Q0cqObcy-q-juQ.png"
                                         alt="Card image cap">
@@ -124,7 +121,7 @@
                                     </div>
                                 </div>
 
-                                <div class=" mySlides card" style="width: 28rem; margin-left: 2.5rem; height: 20rem;">
+                                <div id="imgshow2" class=" mySlides card">
                                     <img class="card-img-top"
                                         src="https://mytopschools.com/wp-content/uploads/2022/06/text1.png"
                                         alt="Card image cap">
@@ -135,7 +132,7 @@
                                     </div>
                                 </div>
 
-                                <div class=" mySlides card" style="width: 28rem; margin-left: 2.5rem; height: 20rem;">
+                                <div id="imgshow3" class=" mySlides card">
                                     <img class="card-img-top" src="https://i.morioh.com/201012/7fac8bea.webp"
                                         alt="Card image cap">
                                     <div class="card-body">
@@ -175,7 +172,8 @@
                     <form method="post" action="/audio">
                         <tr>
                             <th>
-                                <h6 style="margin-top: 20px;"><span style="color:#ef233c;"><u>OR</u></span></h6>
+                                <h6 style="margin-top: 20px;"><span class="or" style="color:#ef233c;"><u>OR</u></span>
+                                </h6>
                                 <div>
 
                                     <h5>Upload Your audio/video file </h5> <input type="file" message=Choose name=file>
@@ -209,7 +207,7 @@
 
                         <tr>
 
-                            <td><input disabled="true" id="sum2" class="btn btn-primary btn-md primary" role="button"
+                            <td><input id="sum2" class="btn btn-primary btn-md primary" role="button"
                                     aria-pressed="true" style="margin-top: 5px;margin-bottom: 12px;" type="submit"
                                     value="Summarize your File" onclick=loading><img id="loading2">
 
@@ -255,17 +253,19 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <q>Technology made large populations possible; large populations now
-                        make technology indispensable.</q> - <span style="color:#8d99ae; font-size: smaller;"><b>Joseph
+                        make technology indispensable.</q> - <span style="color:#f2f3f7; font-size: smaller;"><b>Joseph
                             Krutch</b></span>
                 </div>
-                <div class="col-md-12 text-left bottom-left">Developed by HASSAN SOHAIL&#169;</div>
+                <div style="color: #FFFF33;" class="col-md-12 text-left bottom-left">Developed by HASSAN
+                    SOHAIL&#169;
+                </div>
 
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <ul style="list-style: none;">
                         <br>
-                        <h6>Developers</h6>
+                        <h6 style="color:whitesmoke">Developers</h6>
                         <li>
                             <h6>Jamal Ahmed Khan&#169;</h6>
                         </li>
@@ -286,7 +286,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4" style="font-family: 'Times New Roman', Times, serif;">NED University of
+                <div style="color: #8d99ae yellow;" class="col-md-4"
+                    style="font-family: 'Times New Roman', Times, serif;">NED
+                    University of
                     Engineering and Technology</div>
             </div>
         </div>
@@ -481,14 +483,33 @@
     }
 
 
+    #imgshow {
+        width: 28rem;
+        margin-left: 2.5rem;
+        height: 20rem;
+    }
+
+    #imgshow2 {
+        width: 28rem;
+        margin-left: 2.5rem;
+        height: 20rem;
+    }
+
+    #imgshow3 {
+        width: 28rem;
+        margin-left: 2.5rem;
+        height: 20rem;
+    }
+
+
 
     /* Media Queries */
 
-   
-    @media (max-width: 730px) {
+
+    @media (max-width: 950px) {
 
 
-        
+
         body {
             display: flex;
             flex-direction: column;
@@ -497,6 +518,11 @@
 
         }
 
+        section {
+            background-repeat: repeat-x;
+            background-size: cover;
+            background-position-x: -320px;
+        }
 
 
 
@@ -514,10 +540,12 @@
         }
 
         #sum {
+            margin-top: 30px;
             margin-left: 120px;
         }
 
         #sum2 {
+            margin-top: 30px;
             margin-left: 120px;
         }
 
@@ -532,9 +560,35 @@
             margin-left: 15px;
         }
 
-        #imgslide {
-            display: none;
+
+
+        .card-text {
+            font-size: x-small;
         }
+
+        #imgshow {
+            margin-left: -20px;
+            height: 250px;
+            width: 330px;
+        }
+
+        #imgshow2 {
+            margin-left: -20px;
+            height: 250px;
+            width: 330px;
+        }
+
+        #imgshow3 {
+            margin-left: -20px;
+            height: 250px;
+            width: 330px;
+        }
+
+
+        .or {
+            margin-left: 30px;
+        }
+
     }
 </style>
 

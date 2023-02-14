@@ -66,17 +66,18 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <q>Technology made large populations possible; large populations now
-                        make technology indispensable.</q> - <span style="color:#8d99ae; font-size: smaller;"><b>Joseph
+                        make technology indispensable.</q> - <span style="color:#f2f3f7; font-size: smaller;"><b>Joseph
                             Krutch</b></span>
                 </div>
-                <div class="col-md-12 text-left bottom-left">Designed by HASSAN SOHAIL&#169;</div>
+                <div style="color: #FFFF33;" class="col-md-12 text-left bottom-left">Developed by HASSAN SOHAIL&#169;
+                </div>
 
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <ul style="list-style: none;">
                         <br>
-                        <h6>Developed by</h6>
+                        <h6>Developers</h6>
                         <li>
                             <h6>Jamal Ahmed Khan&#169;</h6>
                         </li>
@@ -176,7 +177,7 @@
         /* or any other text color */
         padding: 20px 0;
         /* adjust as needed */
-        background-image: url('https://i.gifer.com/origin/0e/0e01e56732d4fae6e63f9fc4beeaded9.gif');
+        background-image: url('codebg.gif');
         background-repeat: no-repeat;
         background-size: cover;
         /*position: relative;*/
@@ -223,33 +224,35 @@
 
 
     /* Media Queries */
+    @media (max-width: 730px) {
 
-    @media (max-width: 992px) {
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+
+
+
+        }
+
+        main {
+
+            margin-bottom: 10%;
+        }
+
         footer {
-            height: 120px;
-            width: 100%;
+
             bottom: 0;
-            /* increase height for smaller screens */
+            width: 90vh;
+            position: relative;
+            margin-top: 70%;
+
+
+
+
         }
 
-        .sticky-footer {
-            font-size: 14px;
-            /* adjust font size for smaller screens */
-        }
-    }
-
-    @media (max-width: 768px) {
-        footer {
-            height: 100px;
-            width: 100%;
-            bottom: 0;
-            /* decrease height for even smaller screens */
-        }
-
-        .sticky-footer {
-            font-size: 12px;
-            /* adjust font size for even smaller screens */
-        }
     }
 </style>
 
