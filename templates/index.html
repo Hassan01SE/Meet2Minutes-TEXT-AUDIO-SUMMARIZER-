@@ -39,13 +39,24 @@
 </head>
 
 
-<body>
 
-    <script> alert("The Back End Functionality of the website hasn't been deployed yet, so the buttons are temporarily disabled! "); </script>
+<body>
+    <nav id="navbg" class="navbar sticky-top navbar-expand-md navbar-dark ">
+        <div class="container-fluid">
+            <a id="gitlink" target="_blank" class="navbar-brand"
+                href="https://github.com/Hassan01SE/Minutes2Meet-TEXT-AUDIO-SUMMARIZER-">
+                <img src="github-mark-white.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Meet2Minutes
+            </a>
+        </div>
+    </nav>
+
 
 
 
     <section>
+        <br>
         <h1 id="heading">Meet 2 Minutes</h1>
 
         <!--     <br>
@@ -101,7 +112,7 @@
                                         <option value="ko">Korean</option>
                                     </select>
 
-                                    <input disabled="true" id="sum" class=" btn btn-warning btn-md active" role="button"
+                                    <input id="sum" class=" btn btn-warning btn-md active" role="button"
                                         aria-pressed="true"
                                         style="display: block;margin-top: 5px; color:#fefae0; background-color: #BB0E7E;border-color: #BB0E7E;"
                                         type="submit" value="Summarize" onclick="loading()"><img id="loading">
@@ -208,7 +219,7 @@
 
                         <tr>
 
-                            <td><input disabled="true" id="sum2" class="btn btn-primary btn-md primary" role="button"
+                            <td><input id="sum2" class="btn btn-primary btn-md primary" role="button"
                                     aria-pressed="true" style="margin-top: 5px;margin-bottom: 12px;" type="submit"
                                     value="Summarize your File" onclick=loading><img id="loading2">
 
@@ -348,6 +359,21 @@
 </body>
 
 <style>
+    #navbg {
+        background-color: black;
+    }
+
+    #gitlink {
+        margin-left: 5px;
+        transition: 0.5s linear;
+    }
+
+    #gitlink:hover {
+        transform: scale(1.2);
+        color: grey;
+
+    }
+
     q {
         transition: 0.5s;
     }
