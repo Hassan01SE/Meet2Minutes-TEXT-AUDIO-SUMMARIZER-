@@ -2,7 +2,12 @@
 
 <div align="center">
 <a href="https://ibb.co/tYRQFsR"><img src="https://i.ibb.co/mhpbgqp/log3.jpg" alt="log3" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+http://hassan.pythonanywhere.com/ <br>
+<a href="https://ibb.co/2gqnwry"><img src="https://i.ibb.co/t8BmS64/Screenshot-20230215-182303-Chrome.jpg" alt="Screenshot-20230215-182303-Chrome" border="0"></a>
+
 </div>
+
+<br>
 
 The Automated Meeting Summarizer project is a cutting-edge solution that harnesses 
 the power of Artificial Intelligence (AI) to provide automated summary features for text, 
