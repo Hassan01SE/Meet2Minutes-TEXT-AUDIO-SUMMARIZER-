@@ -23,7 +23,7 @@ The project is designed to work with a wide range of data sources including meet
 transcripts, audio recordings, and video recordings. 
 The AI-based technology used in this project is 
 capable of analyzing large amounts of data and 
-identifying key points and important information. The 
+identifying key points and important information.The 
 system is also able to extract key insights and trends 
 from the data, making it an invaluable tool for 
 decision-making and strategic planning. The 
