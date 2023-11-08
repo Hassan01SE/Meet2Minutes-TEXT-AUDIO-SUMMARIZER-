@@ -201,4 +201,4 @@ def model():
 
 if __name__ == '__main__':
     load_models()
-    app.run(debug=True)
+    app.run(host="0.0.0", port=5000)
